@@ -1,0 +1,189 @@
+@font-face {
+  font-family: SansSerifExbFLF;
+  src: url("../fonts/SansSerifExbFLF.otf"); }
+@font-face {
+  font-family: SegoeUI;
+  src: url("../fonts/SEGOEUI.ttf"); }
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0; }
+
+body {
+  font-family: SansSerifExbFLF;
+  height: 100%;
+  font-size: 1em; }
+
+.page_container {
+  display: flex;
+  flex-flow: column wrap;
+  height: 100%;
+  width: 100%;
+  align-items: center; }
+
+header {
+  display: table;
+  flex-shrink: 1;
+  width: 100%;
+  height: 15vh;
+  min-height: 30px;
+  max-height: 60px; }
+
+.top_layer {
+  display: table-cell;
+  background-color: #569c87;
+  color: #e8c353;
+  width: 100%;
+  text-align: center;
+  vertical-align: middle; }
+
+.top_layer h1 {
+  letter-spacing: -1;
+  font-kerning: none;
+  font-size: 1.5em; }
+
+.central_container {
+  position: absolute;
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: stretch;
+  align-content: stretch;
+  top: 60px;
+  overflow-y: auto; }
+
+.main_container {
+  display: flex;
+  flex-flow: column wrap;
+  align-items: flex-start;
+  font-family: SegoeUI;
+  margin: 20px 30px;
+  background-color: white;
+  height: 90%; }
+
+.card_deck {
+  display: flex;
+  flex-flow: row wrap;
+  flex-shrink: 1;
+  height: 100%;
+  align-items: center;
+  align-content: center;
+  justify-content: center;
+  text-align: center;
+  overflow: hidden; }
+
+.card {
+  display: table;
+  margin: 10px;
+  padding: 0 5px;
+  word-wrap: break-word;
+  background-clip: border-box;
+  border: 1px solid rgba(0, 0, 0, 0.125);
+  border-radius: .25rem;
+  height: 300px;
+  width: 200px; }
+
+.salmon {
+  background-color: #fcdfda; }
+
+.pink {
+  background-color: #fff5fd; }
+
+.grey {
+  background-color: #f9f9f9; }
+
+.white {
+  background-color: #fdfffd; }
+
+.align_middle_center {
+  height: 100%;
+  display: table-cell;
+  vertical-align: middle;
+  text-align: center; }
+
+/*
+svg#music_note {
+  height:15px;
+  width:15px;
+  background: rgb(243,209,205);
+  fill: url(#my-cool-gradient) rgba(243,209,205,1);
+  filter: invert(0%) sepia(100%) saturate(1450%) hue-rotate(351deg) brightness(103%) contrast(109%);
+}
+*/
+.gradient_note {
+  width: 100px;
+  height: 100px;
+  padding: 1rem;
+  background-image: linear-gradient(to right, #f3d1cd, #f2cfca);
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  -webkit-mask-image: url(https://www.svgrepo.com/show/141347/musical-note-symbol.svg);
+  mask-image: url(https://www.svgrepo.com/show/141347/musical-note-symbol.svg);
+  -webkit-mask-size: 100%;
+  mask-size: 100%;
+  mask-repeat: no-repeat;
+  -webkit-mask-repeat: no-repeat;
+  mask-position: center;
+  -webkit-mask-position: center; }
+
+.lower_container {
+  font-family: SegoeUI;
+  display: flex;
+  flex-flow: row nowrap;
+  align-self: center;
+  text-align: center;
+  height: 40px;
+  width: 200px;
+  margin-bottom: 50px; }
+
+.btn {
+  text-align: center;
+  width: 100%;
+  border-radius: 5px;
+  padding: 8px 0;
+  height: 40px;
+  background: #569c87;
+  color: #e8c353;
+  cursor: pointer;
+  transform: scale(1); }
+
+.btn h6 {
+  text-align: center;
+  font-size: 1.3em; }
+
+.bottom_container {
+  font-family: SegoeUI;
+  display: flex;
+  flex-flow: row nowrap;
+  position: fixed;
+  bottom: 0;
+  width: 100%; }
+
+footer {
+  display: table;
+  width: 100%; }
+
+.bottom_layer {
+  display: table-cell;
+  vertical-align: middle;
+  background-color: #569c87;
+  color: #e8c353;
+  width: 50%;
+  height: 40px; }
+
+.left {
+  text-align: left;
+  padding-left: 20px; }
+
+.right {
+  text-align: right;
+  padding-right: 20px; }
+
+.menu1_container {
+  background-color: #fcdfda;
+  font-family: "Comic Sans MS"; }
+
+* {
+  font-family: "Times New Roman"; }
+
+/*# sourceMappingURL=style.css.map */
