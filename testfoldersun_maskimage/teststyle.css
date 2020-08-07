@@ -1,0 +1,26 @@
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    background: #FFFFFF;
+}
+
+.el {
+    width: 100px;
+    height: 100px;
+    padding: 1rem;
+    
+    background-image: linear-gradient(to right, red,pink);
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    
+    mask-image: url(https://www.svgrepo.com/show/141347/musical-note-symbol.svg);
+
+    mask-size: 100%;
+    mask-repeat: no-repeat;
+    mask-position: center;
+}
