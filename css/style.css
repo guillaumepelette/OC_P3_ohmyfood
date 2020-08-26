@@ -485,7 +485,7 @@ h2 {
   src: url("../fonts/Prociono.ttf");
 }
 .menu2_container {
-  background-color: #fcdfda;
+  background-color: #fff5fd;
   font-family: "Comic Sans MS", "Franklin Gothic Medium", "Arial Narrow", "Arial", sans-serif;
   height: 100%;
 }
@@ -525,9 +525,6 @@ section {
   -moz-background-clip: text;
   -webkit-text-fill-color: transparent;
   -moz-text-fill-color: transparent;
-}
-
-h1 {
   font-size: 35px;
 }
 
@@ -674,7 +671,7 @@ h2 {
   src: url("../fonts/DancingScript.ttf");
 }
 .menu3_container {
-  background-color: #fcdfda;
+  background-color: #f9f9f9;
   font-family: "Comic Sans MS", "Franklin Gothic Medium", "Arial Narrow", "Arial", sans-serif;
   height: 100%;
 }
@@ -714,9 +711,6 @@ section {
   -moz-background-clip: text;
   -webkit-text-fill-color: transparent;
   -moz-text-fill-color: transparent;
-}
-
-h1 {
   font-size: 60px;
 }
 
@@ -831,6 +825,168 @@ h2 {
   }
 
   .menu3_course-content {
+    width: 100%;
+  }
+}
+@font-face {
+  font-family: KaushanScript;
+  src: url("../fonts/KaushanScript.ttf");
+}
+.menu4_container {
+  background-color: #fdfffd;
+  font-family: "Comic Sans MS", "Franklin Gothic Medium", "Arial Narrow", "Arial", sans-serif;
+  height: 100%;
+}
+
+.menu4_central-container {
+  padding-top: 30px;
+  display: flex;
+  flex-flow: column nowrap;
+  overflow-y: auto;
+  height: 100%;
+  padding-bottom: 100px;
+}
+
+.menu4_middle-container {
+  margin: 0 auto;
+  width: 600px;
+}
+
+section {
+  margin-bottom: 30px;
+}
+
+.menu4_top-section {
+  text-align: center;
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+  font-family: KaushanScript;
+  margin: 50px 0;
+}
+
+.menu4_top-section h1 {
+  background-image: linear-gradient(45deg, #42973c, #bfff7e);
+  background-size: 100%;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -moz-text-fill-color: transparent;
+  font-size: 60px;
+}
+
+h2 {
+  font-size: 20px;
+  font-weight: 100;
+}
+
+.menu4_first-course, .menu4_main-course, .menu4_last-course {
+  display: block;
+}
+
+.menu4_course-header {
+  margin-bottom: 25px;
+  text-align: center;
+}
+
+.menu4_course-content {
+  margin-bottom: 40px;
+}
+
+.menu4_menu-line {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  width: 100%;
+  margin-bottom: 15px;
+}
+
+.menu4_course-content {
+  width: 100%;
+}
+
+@media (max-width: 600px) {
+  .menu4_container {
+    background-color: #fcdfda;
+    font-family: "Comic Sans MS", "Franklin Gothic Medium", "Arial Narrow", "Arial", sans-serif;
+    height: 100%;
+  }
+
+  .menu4_central-container {
+    padding-top: 30px;
+    display: flex;
+    flex-flow: column nowrap;
+    overflow-y: auto;
+    height: 100%;
+    padding-bottom: 100px;
+  }
+
+  .menu4_middle-container {
+    margin: 0 auto;
+    width: 100%;
+  }
+
+  section {
+    margin-bottom: 30px;
+  }
+
+  .menu4_top-section {
+    text-align: center;
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    font-family: KaushanScript;
+    margin: 50px 0;
+  }
+
+  .menu4_top-section h1 {
+    background-image: linear-gradient(45deg, #0431df, #0887fb);
+    background-size: 100%;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -moz-text-fill-color: transparent;
+  }
+
+  h1 {
+    font-size: 60px;
+  }
+
+  h2 {
+    font-size: 20px;
+    font-weight: 100;
+  }
+
+  .menu4_first-course, .menu4_main-course, .menu4_last-course {
+    display: block;
+  }
+
+  .menu4_course-header {
+    margin-bottom: 25px;
+    text-align: center;
+  }
+
+  .menu4_course-content {
+    margin-bottom: 40px;
+    font-size: 1em;
+    padding: 0 10px;
+  }
+
+  .menu4_menu-line {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    width: 100%;
+    margin-bottom: 15px;
+  }
+
+  .menu4_price {
+    margin-left: 10px;
+  }
+
+  .menu4_course-content {
     width: 100%;
   }
 }
