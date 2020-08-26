@@ -1,3 +1,59 @@
-* {
-    font-family: "Times New Roman";
+
+
+.menu2_container {
+    background-color: $salmon;
+    font-family: "Comic Sans MS", 'Franklin Gothic Medium', 'Arial Narrow', "Arial", sans-serif;
+    height:100%;
+}
+
+
+.menu2_central-container {
+    padding-top:30px;
+    display: flex;
+    flex-flow: column nowrap;
+    overflow-y: auto;
+    height:100%;
+    padding-bottom:40px;
+}
+
+.menu2_middle-container {
+    margin: 0 auto;
+    width: 600px; 
+}
+
+section {
+    margin-bottom: 30px;
+}
+
+.menu2_top-section {
+    text-align:center;
+}
+
+.menu2_first-course, .menu2_main-course, .menu2_last-course {
+    display:block;
+}
+
+.menu2_course-header {
+    margin-bottom:15px;
+    text-align:center;
+}
+
+.menu2_course-content {
+    margin-bottom:40px;
+}
+
+.menu2_menu-line {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    width:100%;
+    margin-bottom:10px;
+}
+
+.menu2_course-content {
+    width:100%;
+}
+
+.menu2_bottom-section {
+    text-align:center;
 }

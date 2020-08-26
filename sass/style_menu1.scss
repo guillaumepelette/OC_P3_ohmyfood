@@ -1,8 +1,273 @@
 
+@font-face {
+    font-family: RJOETRIAL;
+    src: url("../fonts/RJOETRIAL.otf");
+  }
+
 
 .menu1_container {
     background-color: $salmon;
-    font-family: "Comic Sans MS";
+    font-family: "Comic Sans MS", 'Franklin Gothic Medium', 'Arial Narrow', "Arial", sans-serif;
+    height:100%;
 }
 
 
+.menu1_central-container {
+    padding-top:30px;
+    display: flex;
+    flex-flow: column nowrap;
+    overflow-y: auto;
+    height:100%;
+    padding-bottom:40px;
+}
+
+.menu1_middle-container {
+    margin: 0 auto;
+    width: 600px; 
+}
+
+section {
+    margin-bottom: 30px;
+}
+
+.menu1_top-section {
+    text-align:center;
+    display:flex;
+    flex-flow:column nowrap;
+    align-items:center;
+    font-family: RJOETRIAL;
+}
+
+.menu1_gradient_note-top {
+    text-align: center;
+    width: 70px;
+    height: 70px;
+
+    background-image: linear-gradient(45deg, $dark-pink, $light-orange);
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    mask-image: url(https://cdn.onlinewebfonts.com/svg/img_41444.svg);
+    mask-size: 100%;
+    mask-repeat: no-repeat;
+    mask-position: center;
+    margin-bottom: 15px;
+}
+
+h1 {
+    font-size:35px;
+}
+
+h2 {
+    font-size:20px;
+}
+
+.menu1_first-course, .menu1_main-course, .menu1_last-course {
+    display:block;
+}
+
+.menu1_course-header {
+    margin-bottom:15px;
+    text-align:center;
+}
+
+.menu1_course-content {
+    margin-bottom:40px;
+}
+
+.menu1_menu-line {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    width:100%;
+    margin-bottom:10px;
+}
+
+.menu1_price {
+    font-weight:700;
+}
+
+.menu1_course-content {
+    width:100%;
+}
+
+.menu1_bottom-section {
+    text-align:center;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    width:100%;
+    position:relative;
+}
+
+.menu1_bottom-middle-container {
+    margin: 0 auto;
+    width: 600px; 
+    text-align:center;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    position:relative;
+}
+
+.note-caption {
+    padding-top:40px;
+}
+
+.menu1_gradient_note-bottom {
+    text-align: center;
+    width: 70px;
+    height: 70px;
+    margin-right:5px;
+
+    background-image: linear-gradient(45deg, $dark-pink, $light-orange);
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    mask-image: url(https://cdn.onlinewebfonts.com/svg/img_41444.svg);
+    mask-size: 100%;
+    mask-repeat: no-repeat;
+    mask-position: center;
+}
+
+
+
+
+@media (max-width: 600px) {
+    .menu1_container {
+        background-color: $salmon;
+        font-family: "Comic Sans MS", 'Franklin Gothic Medium', 'Arial Narrow', "Arial", sans-serif;
+        height:100%;
+    }
+    
+    
+    .menu1_central-container {
+        padding-top:30px;
+        display: flex;
+        flex-flow: column nowrap;
+        overflow-y: auto;
+        height:100%;
+        padding-bottom:40px;
+    }
+    
+    .menu1_middle-container {
+        margin: 0 auto;
+        width: 600px; 
+    }
+    
+    section {
+        margin-bottom: 30px;
+    }
+    
+    .menu1_top-section {
+        text-align:center;
+        display:flex;
+        flex-flow:column nowrap;
+        align-items:center;
+        font-family: RJOETRIAL;
+    }
+    
+    .menu1_gradient_note-top {
+        text-align: center;
+        width: 70px;
+        height: 70px;
+    
+        background-image: linear-gradient(45deg, $dark-pink, $light-orange);
+        background-size: contain;
+        background-position: center;
+        background-repeat: no-repeat;
+    
+        mask-image: url(https://cdn.onlinewebfonts.com/svg/img_41444.svg);
+        mask-size: 100%;
+        mask-repeat: no-repeat;
+        mask-position: center;
+        margin-bottom: 15px;
+    }
+    
+    h1 {
+        font-size:35px;
+    }
+    
+    h2 {
+        font-size:20px;
+    }
+    
+    .menu1_first-course, .menu1_main-course, .menu1_last-course {
+        display:block;
+    }
+    
+    .menu1_course-header {
+        margin-bottom:15px;
+        text-align:center;
+    }
+    
+    .menu1_course-content {
+        margin-bottom:40px;
+    }
+    
+    .menu1_menu-line {
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: space-between;
+        width:100%;
+        margin-bottom:10px;
+    }
+    
+    .menu1_price {
+        font-weight:700;
+    }
+    
+    .menu1_course-content {
+        width:100%;
+    }
+    
+    .menu1_bottom-section {
+        text-align:center;
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: center;
+        width:100%;
+        position:relative;
+    }
+    
+    .menu1_bottom-middle-container {
+        margin: 0 auto;
+        width: 600px; 
+        text-align:center;
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: center;
+        position:relative;
+    }
+    
+    .note-caption {
+        padding-top:40px;
+    }
+    
+    .menu1_gradient_note-bottom {
+        text-align: center;
+        width: 70px;
+        height: 70px;
+        margin-right:5px;
+    
+        background-image: linear-gradient(45deg, $dark-pink, $light-orange);
+        background-size: contain;
+        background-position: center;
+        background-repeat: no-repeat;
+    
+        mask-image: url(https://cdn.onlinewebfonts.com/svg/img_41444.svg);
+        mask-size: 100%;
+        mask-repeat: no-repeat;
+        mask-position: center;
+    }
+    
+    
+    
+
+
+
+
+
+  }
