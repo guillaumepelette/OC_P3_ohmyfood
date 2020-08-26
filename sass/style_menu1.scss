@@ -81,7 +81,7 @@ h2 {
     flex-flow: row nowrap;
     justify-content: space-between;
     width:100%;
-    margin-bottom:10px;
+    margin-bottom:15px;
 }
 
 .menu1_price {
@@ -112,7 +112,8 @@ h2 {
 }
 
 .note-caption {
-    padding-top:40px;
+    padding-top:45px;
+    font-family: RJOETRIAL;
 }
 
 .menu1_gradient_note-bottom {
@@ -134,8 +135,9 @@ h2 {
 
 
 
+$breakpoint-tablet: 600px;
+@media (max-width: $breakpoint-tablet) {
 
-@media (max-width: 600px) {
     .menu1_container {
         background-color: $salmon;
         font-family: "Comic Sans MS", 'Franklin Gothic Medium', 'Arial Narrow', "Arial", sans-serif;
@@ -154,7 +156,7 @@ h2 {
     
     .menu1_middle-container {
         margin: 0 auto;
-        width: 600px; 
+        width: 100%; 
     }
     
     section {
@@ -205,6 +207,8 @@ h2 {
     
     .menu1_course-content {
         margin-bottom:40px;
+        font-size:1em;
+        padding: 0 10px;
     }
     
     .menu1_menu-line {
@@ -212,11 +216,12 @@ h2 {
         flex-flow: row nowrap;
         justify-content: space-between;
         width:100%;
-        margin-bottom:10px;
+        margin-bottom:15px;
     }
     
     .menu1_price {
         font-weight:700;
+        margin-left:10px;
     }
     
     .menu1_course-content {

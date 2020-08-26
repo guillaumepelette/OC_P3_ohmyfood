@@ -9,14 +9,6 @@
   src: url("../fonts/SEGOEUI.ttf");
 }
 
-/*
-.chic_français {
-  background-image: linear-gradient(45deg, #f3ec78, #af4261);
-  background-size: 100%;
-  background-clip: text;
-  text-fill-color: transparent;
-}
-*/
 .chic_français {
   background-image: linear-gradient(45deg, $brown, $purple);
   background-size: 100%;
@@ -158,16 +150,6 @@ header {
   vertical-align:middle;
   text-align:center;
 }
-
-/*
-svg#music_note {
-  height:15px;
-  width:15px;
-  background: rgb(243,209,205);
-  fill: url(#my-cool-gradient) rgba(243,209,205,1);
-  filter: invert(0%) sepia(100%) saturate(1450%) hue-rotate(351deg) brightness(103%) contrast(109%);
-}
-*/
 
 .gradient_note {
     text-align: center;
