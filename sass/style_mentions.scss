@@ -1,0 +1,134 @@
+@font-face {
+    font-family: DancingScript;
+    src: url("../fonts/DancingScript.ttf");
+  }
+
+.mentions_container {
+    font-family: "Comic Sans MS", 'Franklin Gothic Medium', 'Arial Narrow', "Arial", sans-serif;
+    height:100%;
+}
+
+.mentions_central-container {
+    padding-top:30px;
+    display: flex;
+    flex-flow: column nowrap;
+    overflow-y: auto;
+    height:100%;
+    padding-bottom:100px;
+}
+
+.mentions_middle-container {
+    margin: 0 auto;
+    width: 600px;
+}
+
+section {
+    margin-bottom: 30px;
+}
+
+.mentions_top-section {
+    text-align:center;
+    display:flex;
+    flex-flow:column nowrap;
+    align-items:center;
+    margin:20px 0;
+}
+
+.mentions_top-section h1 {
+    font-family: SegoeUI;
+    font-size:60px;
+}
+
+h2 {
+    font-size:20px;
+    font-weight:100;
+}
+
+.mentions_header {
+    margin-bottom:25px;
+    text-align:center;
+}
+
+.mentions_header h2 {
+    font-weight:700;
+}
+
+.mentions_content {
+    margin-bottom:40px;
+    width:100%;
+}
+
+.mentions_content p {
+    margin-bottom:40px;
+    width:100%;
+    font-weight:normal;
+}
+
+
+
+$breakpoint-tablet: 600px;
+@media (max-width: $breakpoint-tablet) {
+
+    @font-face {
+        font-family: DancingScript;
+        src: url("../fonts/DancingScript.ttf");
+      }
+    
+    .mentions_container {
+        background-color: $grey;
+        font-family: "Comic Sans MS", 'Franklin Gothic Medium', 'Arial Narrow', "Arial", sans-serif;
+        height:100%;
+    }
+    
+    .mentions_central-container {
+        padding-top:30px;
+        display: flex;
+        flex-flow: column nowrap;
+        overflow-y: auto;
+        height:100%;
+        padding-bottom:100px;
+    }
+    
+    .mentions_middle-container {
+        margin: 0 auto;
+        width: 100%; 
+    }
+    
+    section {
+        margin-bottom: 30px;
+    }
+
+    .mentions_top-section {
+        text-align:center;
+        display:flex;
+        flex-flow:column nowrap;
+        align-items:center;
+        margin:20px 0;
+    }
+    
+    .mentions_top-section h1 {
+        font-family: SegoeUI;
+        font-size:60px;
+    }
+    
+    h2 {
+        font-size:20px;
+        font-weight:100;
+    }
+    
+    .mentions_header {
+        margin-bottom:25px;
+        text-align:center;
+    }
+    
+    .mentions_header h2 {
+        font-weight:700;
+    }
+
+    .mentions_content {
+        margin-bottom:40px;
+        width:100%;
+        padding:0 10px;
+    }
+
+  }
