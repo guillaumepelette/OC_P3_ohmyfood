@@ -237,14 +237,13 @@ header {
   align-self:center;
   text-align: center;
   height:40px;
-  width: 300px;
+  width: 200px;
   border-radius:5px;
-  padding: 8px 0;
+  padding: 8px 0 8px 40px;
   margin-bottom:50px;
   background: $primary;
   color: $secondary;
 }
-
 
 .btn {
   display: flex;
@@ -253,11 +252,18 @@ header {
   text-align: center;
   font-size:1.3em;
   cursor: pointer;
-  transform:scale(1);
 }
 
 .next {
+  :hover + .dot {
+    background-color:white;
+    transform: scaleX (1);
+    -webkit-transform: scaleX (1);
+    -moz-transform: scaleX (1);
+    -o-transform: scaleX (1);
+  }
   margin-right: 10px;
+  text-align: center;
 }
 
 .dotdotdot {
@@ -265,16 +271,27 @@ header {
   flex-flow:row nowrap;
   align-items:flex-end;
   padding-bottom:2px;
+
 }
 
-
 .dot {
-  background-color:white;
+  background-color:red;
   height:7px;
   width:7px;
   margin-right: 5px;
+  transform: scalex(0);
+  -webkit-transform: scaleX(0);
+  -moz-transform:scaleX(0);
+  -o-transform:scaleX(0);
+  transform-origin: left;
+  -webkit-transform-origin: left;
+  -moz-transform-origin: left;
+  -o-transform-origin: left;
+  transition: transform 500ms, background-color 0ms;
+  -webkit-transition:  transform 500ms, background-color 0ms;
+  -moz-transition: transform 500ms, background-color 0ms;
+  -o-transition: transform 500ms, background-color 0ms;
 }
-
 
 .bottom_container {
   font-family: SegoeUI;
