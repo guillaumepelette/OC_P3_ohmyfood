@@ -49,9 +49,19 @@ section {
     background-repeat: no-repeat;
 
     mask-image: url(https://cdn.onlinewebfonts.com/svg/img_41444.svg);
+    -webkit-mask-image: url(https://cdn.onlinewebfonts.com/svg/img_41444.svg);
+    -moz-mask-image: url(https://cdn.onlinewebfonts.com/svg/img_41444.svg);
     mask-size: 100%;
+    -webkit-mask-size: 100%;
+    -moz-mask-size: 100%;
     mask-repeat: no-repeat;
+    -webkit-mask-repeat: no-repeat;
+    -moz-mask-repeat: no-repeat;
     mask-position: center;
+    -webkit-mask-position: center;
+    -moz-mask-position: center;
+    text-align: center;
+    margin: 0 auto;
     margin-bottom: 15px;
 }
 
@@ -70,6 +80,24 @@ h2 {
 .menu1_course-header {
     margin-bottom:15px;
     text-align:center;
+}
+
+.menu1_course-header h2 {
+    display:inline-block;
+    text-decoration:none;
+    &:hover {
+        &::after {
+            transform-origin: 0% 50%;
+            transform: scaleX(1); 
+        }
+    }
+    &::after {
+        display:block;
+        content: "";
+        border-bottom: solid 2px #000;  
+        transform: scaleX(0);
+        transition: transform 250ms ease-in-out;
+    }
 }
 
 .menu1_course-content {
@@ -114,6 +142,7 @@ h2 {
 .note-caption {
     padding-top:45px;
     font-family: RJOETRIAL;
+    margin-left:5px;
 }
 
 .menu1_gradient_note-bottom {
@@ -128,11 +157,20 @@ h2 {
     background-repeat: no-repeat;
 
     mask-image: url(https://cdn.onlinewebfonts.com/svg/img_41444.svg);
+    -webkit-mask-image: url(https://cdn.onlinewebfonts.com/svg/img_41444.svg);
+    -moz-mask-image: url(https://cdn.onlinewebfonts.com/svg/img_41444.svg);
     mask-size: 100%;
+    -webkit-mask-size: 100%;
+    -moz-mask-size: 100%;
     mask-repeat: no-repeat;
+    -webkit-mask-repeat: no-repeat;
+    -moz-mask-repeat: no-repeat;
     mask-position: center;
+    -webkit-mask-position: center;
+    -moz-mask-position: center;
+    text-align: center;
+    margin: 0;
 }
-
 
 
 $breakpoint-tablet: 600px;
@@ -182,9 +220,19 @@ $breakpoint-tablet: 600px;
         background-repeat: no-repeat;
     
         mask-image: url(https://cdn.onlinewebfonts.com/svg/img_41444.svg);
+        -webkit-mask-image: url(https://cdn.onlinewebfonts.com/svg/img_41444.svg);
+        -moz-mask-image: url(https://cdn.onlinewebfonts.com/svg/img_41444.svg);
         mask-size: 100%;
+        -webkit-mask-size: 100%;
+        -moz-mask-size: 100%;
         mask-repeat: no-repeat;
+        -webkit-mask-repeat: no-repeat;
+        -moz-mask-repeat: no-repeat;
         mask-position: center;
+        -webkit-mask-position: center;
+        -moz-mask-position: center;
+        text-align: center;
+        margin: 0 auto;
         margin-bottom: 15px;
     }
     
@@ -203,6 +251,24 @@ $breakpoint-tablet: 600px;
     .menu1_course-header {
         margin-bottom:15px;
         text-align:center;
+    }
+
+    .menu1_course-header h2 {
+        display:inline-block;
+        text-decoration:none;
+        &:hover {
+            &::after {
+                transform-origin: 0% 50%;
+                transform: scaleX(1); 
+            }
+        }
+        &::after {
+            display:block;
+            content: "";
+            border-bottom: solid 2px #000;  
+            transform: scaleX(0);
+            transition: transform 250ms ease-in-out;
+        }
     }
     
     .menu1_course-content {
@@ -248,7 +314,9 @@ $breakpoint-tablet: 600px;
     }
     
     .note-caption {
-        padding-top:40px;
+        padding-top:45px;
+        font-family: RJOETRIAL;
+        margin-left:5px;
     }
     
     .menu1_gradient_note-bottom {
@@ -263,9 +331,19 @@ $breakpoint-tablet: 600px;
         background-repeat: no-repeat;
     
         mask-image: url(https://cdn.onlinewebfonts.com/svg/img_41444.svg);
+        -webkit-mask-image: url(https://cdn.onlinewebfonts.com/svg/img_41444.svg);
+        -moz-mask-image: url(https://cdn.onlinewebfonts.com/svg/img_41444.svg);
         mask-size: 100%;
+        -webkit-mask-size: 100%;
+        -moz-mask-size: 100%;
         mask-repeat: no-repeat;
+        -webkit-mask-repeat: no-repeat;
+        -moz-mask-repeat: no-repeat;
         mask-position: center;
+        -webkit-mask-position: center;
+        -moz-mask-position: center;
+        text-align: center;
+        margin: 0;
     }
     
     

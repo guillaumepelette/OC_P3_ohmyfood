@@ -62,21 +62,54 @@ h2 {
     font-family: Prociono;
 }
 
+.menu2_course-header {
+    margin-bottom:15px;
+    text-align:center;
+}
+
+.menu2_course-header h2 {
+    display:inline-block;
+    text-decoration:none;
+    &:hover {
+        &::after {
+            transform-origin: 0% 50%;
+            transform: scaleX(1); 
+        }
+    }
+    &::after {
+        display:block;
+        content: "";
+        border-bottom: solid 2px #000;  
+        transform: scaleX(0);
+        transition: transform 250ms ease-in-out;
+    }
+}
+
 .menu2_first-course {
     color:$menu2_dark-orange;
+    .menu2_course-header h2 {
+        &::after {
+            border-bottom: solid 2px $menu2_dark-orange;
+        }
+    }
 }
 
 .menu2_main-course {
     color:$menu2_dark-pink;
+    .menu2_course-header h2 {
+        &::after {
+            border-bottom: solid 2px $menu2_dark-pink;
+        }
+    }
 }
 
 .menu2_last-course {
     color:$menu2_blue-violet;
-}
-
-.menu2_course-header {
-    margin-bottom:15px;
-    text-align:center;
+    .menu2_course-header h2 {
+        &::after {
+            border-bottom: solid 2px $menu2_blue-violet;
+        }
+    }
 }
 
 .menu2_course-content {
@@ -100,11 +133,10 @@ $breakpoint-tablet: 600px;
 @media (max-width: $breakpoint-tablet) {
 
     .menu2_container {
-        background-color: $salmon;
+        background-color: $pink;
         font-family: "Comic Sans MS", 'Franklin Gothic Medium', 'Arial Narrow', "Arial", sans-serif;
         height:100%;
     }
-    
     
     .menu2_central-container {
         padding-top:30px;
@@ -141,12 +173,9 @@ $breakpoint-tablet: 600px;
         -moz-background-clip: text;
         -webkit-text-fill-color: transparent; 
         -moz-text-fill-color: transparent;
-    }
-
-    h1 {
         font-size:35px;
     }
-    
+
     h2 {
         font-size:20px;
     }
@@ -171,6 +200,24 @@ $breakpoint-tablet: 600px;
     .menu2_course-header {
         margin-bottom:15px;
         text-align:center;
+    }
+
+    .menu2_course-header h2 {
+        display:inline-block;
+        text-decoration:none;
+        &:hover {
+            &::after {
+                transform-origin: 0% 50%;
+                transform: scaleX(1); 
+            }
+        }
+        &::after {
+            display:block;
+            content: "";
+            border-bottom: solid 2px #000;  
+            transform: scaleX(0);
+            transition: transform 250ms ease-in-out;
+        }
     }
     
     .menu2_course-content {

@@ -7,6 +7,54 @@
   font-family: SegoeUI;
   src: url("../fonts/SEGOEUI.ttf");
 }
+@keyframes ellipsis {
+  0% {
+    transform: scaleX(0);
+    transform-origin: left;
+  }
+  50% {
+    transform: scaleX(1);
+  }
+  100% {
+    transform-origin: right;
+    transform: scaleX(0);
+  }
+}
+@keyframes wiggle {
+  0% {
+    transform: translate(1px, 1px) rotate(0deg);
+  }
+  10% {
+    transform: translate(-1px, -2px) rotate(-1deg);
+  }
+  20% {
+    transform: translate(-3px, 0px) rotate(1deg);
+  }
+  30% {
+    transform: translate(3px, 2px) rotate(0deg);
+  }
+  40% {
+    transform: translate(1px, -1px) rotate(1deg);
+  }
+  50% {
+    transform: translate(-1px, 2px) rotate(-1deg);
+  }
+  60% {
+    transform: translate(-3px, 1px) rotate(0deg);
+  }
+  70% {
+    transform: translate(3px, 1px) rotate(-1deg);
+  }
+  80% {
+    transform: translate(-1px, -1px) rotate(1deg);
+  }
+  90% {
+    transform: translate(1px, 2px) rotate(0deg);
+  }
+  100% {
+    transform: translate(1px, -2px) rotate(-1deg);
+  }
+}
 .note_enchantee {
   margin-bottom: 15px;
   font-family: RJOETRIAL;
@@ -190,9 +238,17 @@ header {
   background-position: center;
   background-repeat: no-repeat;
   mask-image: url(https://cdn.onlinewebfonts.com/svg/img_41444.svg);
+  -webkit-mask-image: url(https://cdn.onlinewebfonts.com/svg/img_41444.svg);
+  -moz-mask-image: url(https://cdn.onlinewebfonts.com/svg/img_41444.svg);
   mask-size: 100%;
+  -webkit-mask-size: 100%;
+  -moz-mask-size: 100%;
   mask-repeat: no-repeat;
+  -webkit-mask-repeat: no-repeat;
+  -moz-mask-repeat: no-repeat;
   mask-position: center;
+  -webkit-mask-position: center;
+  -moz-mask-position: center;
   text-align: center;
   margin: 0 auto;
 }
@@ -231,9 +287,9 @@ header {
   align-self: center;
   text-align: center;
   height: 40px;
-  width: 200px;
+  width: 220px;
   border-radius: 5px;
-  padding: 8px 0 8px 40px;
+  padding: 8px 0;
   margin-bottom: 50px;
   background: #569c87;
   color: #e8c353;
@@ -246,18 +302,22 @@ header {
   text-align: center;
   font-size: 1.3em;
   cursor: pointer;
+  transform: translateX(15px);
+}
+.btn:hover > .dotdotdot > .dot {
+  background-color: white;
+  animation: ellipsis 900ms both infinite ease-in-out;
+}
+.btn:hover > .dotdotdot > .dot2 {
+  animation-delay: 300ms;
+}
+.btn:hover > .dotdotdot > .dot3 {
+  animation-delay: 600ms;
 }
 
 .next {
   margin-right: 10px;
   text-align: center;
-}
-.next :hover + .dot {
-  background-color: white;
-  transform: scaleX 1;
-  -webkit-transform: scaleX 1;
-  -moz-transform: scaleX 1;
-  -o-transform: scaleX 1;
 }
 
 .dotdotdot {
@@ -268,22 +328,12 @@ header {
 }
 
 .dot {
-  background-color: red;
-  height: 7px;
-  width: 7px;
+  background-color: #569c87;
+  height: 5px;
+  width: 5px;
   margin-right: 5px;
-  transform: scalex(0);
-  -webkit-transform: scaleX(0);
-  -moz-transform: scaleX(0);
-  -o-transform: scaleX(0);
+  transform: scalex(1);
   transform-origin: left;
-  -webkit-transform-origin: left;
-  -moz-transform-origin: left;
-  -o-transform-origin: left;
-  transition: transform 500ms, background-color 0ms;
-  -webkit-transition: transform 500ms, background-color 0ms;
-  -moz-transition: transform 500ms, background-color 0ms;
-  -o-transition: transform 500ms, background-color 0ms;
 }
 
 .bottom_container {
@@ -323,12 +373,20 @@ footer {
   color: #e8c353;
   text-decoration: none;
   font-style: normal;
+  display: inline-block;
+}
+.mentions_link:hover {
+  animation: wiggle 800ms ease-in-out;
 }
 
 .contact_link {
   color: #e8c353;
   text-decoration: none;
   font-style: normal;
+  display: inline-block;
+}
+.contact_link:hover {
+  animation: wiggle 800ms ease-in-out;
 }
 
 @media (max-width: 500px) {
@@ -339,6 +397,54 @@ footer {
   @font-face {
     font-family: SegoeUI;
     src: url("../fonts/SEGOEUI.ttf");
+  }
+  @keyframes ellipsis {
+    0% {
+      transform: scaleX(0);
+      transform-origin: left;
+    }
+    50% {
+      transform: scaleX(1);
+    }
+    100% {
+      transform-origin: right;
+      transform: scaleX(0);
+    }
+  }
+  @keyframes wiggle {
+    0% {
+      transform: translate(1px, 1px) rotate(0deg);
+    }
+    10% {
+      transform: translate(-1px, -2px) rotate(-1deg);
+    }
+    20% {
+      transform: translate(-3px, 0px) rotate(1deg);
+    }
+    30% {
+      transform: translate(3px, 2px) rotate(0deg);
+    }
+    40% {
+      transform: translate(1px, -1px) rotate(1deg);
+    }
+    50% {
+      transform: translate(-1px, 2px) rotate(-1deg);
+    }
+    60% {
+      transform: translate(-3px, 1px) rotate(0deg);
+    }
+    70% {
+      transform: translate(3px, 1px) rotate(-1deg);
+    }
+    80% {
+      transform: translate(-1px, -1px) rotate(1deg);
+    }
+    90% {
+      transform: translate(1px, 2px) rotate(0deg);
+    }
+    100% {
+      transform: translate(1px, -2px) rotate(-1deg);
+    }
   }
   .note_enchantee {
     margin-bottom: 15px;
@@ -523,9 +629,17 @@ footer {
     background-position: center;
     background-repeat: no-repeat;
     mask-image: url(https://cdn.onlinewebfonts.com/svg/img_41444.svg);
+    -webkit-mask-image: url(https://cdn.onlinewebfonts.com/svg/img_41444.svg);
+    -moz-mask-image: url(https://cdn.onlinewebfonts.com/svg/img_41444.svg);
     mask-size: 100%;
+    -webkit-mask-size: 100%;
+    -moz-mask-size: 100%;
     mask-repeat: no-repeat;
+    -webkit-mask-repeat: no-repeat;
+    -moz-mask-repeat: no-repeat;
     mask-position: center;
+    -webkit-mask-position: center;
+    -moz-mask-position: center;
     text-align: center;
     margin: 0 auto;
   }
@@ -560,28 +674,62 @@ footer {
     font-family: SegoeUI;
     display: flex;
     flex-flow: row nowrap;
+    justify-content: center;
     align-self: center;
     text-align: center;
     height: 40px;
-    width: 200px;
+    width: 220px;
+    border-radius: 5px;
+    padding: 8px 0;
     margin-bottom: 50px;
+    background: #569c87;
+    color: #e8c353;
   }
 
   .btn {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
     text-align: center;
-    width: 100%;
-    border-radius: 5px;
-    padding: 8px 0;
-    height: 40px;
-    background: #569c87;
-    color: #e8c353;
+    font-size: 1.3em;
     cursor: pointer;
-    transform: scale(1);
+    transform: translateX(15px);
+  }
+  .btn:hover > .dotdotdot > .dot {
+    background-color: white;
+    animation: ellipsis 900ms both infinite ease-in-out;
+  }
+  .btn:hover > .dotdotdot > .dot2 {
+    animation-delay: 300ms;
+  }
+  .btn:hover > .dotdotdot > .dot3 {
+    animation-delay: 600ms;
   }
 
   .btn h6 {
     text-align: center;
     font-size: 1.3em;
+  }
+
+  .next {
+    margin-right: 10px;
+    text-align: center;
+  }
+
+  .dotdotdot {
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: flex-end;
+    padding-bottom: 2px;
+  }
+
+  .dot {
+    background-color: #569c87;
+    height: 5px;
+    width: 5px;
+    margin-right: 5px;
+    transform: scalex(1);
+    transform-origin: left;
   }
 
   .bottom_container {
@@ -621,12 +769,20 @@ footer {
     color: #e8c353;
     text-decoration: none;
     font-style: normal;
+    display: inline-block;
+  }
+  .mentions_link:hover {
+    animation: wiggle 800ms ease-in-out;
   }
 
   .contact_link {
     color: #e8c353;
     text-decoration: none;
     font-style: normal;
+    display: inline-block;
+  }
+  .contact_link:hover {
+    animation: wiggle 800ms ease-in-out;
   }
 }
 @font-face {
@@ -674,9 +830,19 @@ section {
   background-position: center;
   background-repeat: no-repeat;
   mask-image: url(https://cdn.onlinewebfonts.com/svg/img_41444.svg);
+  -webkit-mask-image: url(https://cdn.onlinewebfonts.com/svg/img_41444.svg);
+  -moz-mask-image: url(https://cdn.onlinewebfonts.com/svg/img_41444.svg);
   mask-size: 100%;
+  -webkit-mask-size: 100%;
+  -moz-mask-size: 100%;
   mask-repeat: no-repeat;
+  -webkit-mask-repeat: no-repeat;
+  -moz-mask-repeat: no-repeat;
   mask-position: center;
+  -webkit-mask-position: center;
+  -moz-mask-position: center;
+  text-align: center;
+  margin: 0 auto;
   margin-bottom: 15px;
 }
 
@@ -695,6 +861,22 @@ h2 {
 .menu1_course-header {
   margin-bottom: 15px;
   text-align: center;
+}
+
+.menu1_course-header h2 {
+  display: inline-block;
+  text-decoration: none;
+}
+.menu1_course-header h2:hover::after {
+  transform-origin: 0% 50%;
+  transform: scaleX(1);
+}
+.menu1_course-header h2::after {
+  display: block;
+  content: "";
+  border-bottom: solid 2px #000;
+  transform: scaleX(0);
+  transition: transform 250ms ease-in-out;
 }
 
 .menu1_course-content {
@@ -739,6 +921,7 @@ h2 {
 .note-caption {
   padding-top: 45px;
   font-family: RJOETRIAL;
+  margin-left: 5px;
 }
 
 .menu1_gradient_note-bottom {
@@ -751,9 +934,19 @@ h2 {
   background-position: center;
   background-repeat: no-repeat;
   mask-image: url(https://cdn.onlinewebfonts.com/svg/img_41444.svg);
+  -webkit-mask-image: url(https://cdn.onlinewebfonts.com/svg/img_41444.svg);
+  -moz-mask-image: url(https://cdn.onlinewebfonts.com/svg/img_41444.svg);
   mask-size: 100%;
+  -webkit-mask-size: 100%;
+  -moz-mask-size: 100%;
   mask-repeat: no-repeat;
+  -webkit-mask-repeat: no-repeat;
+  -moz-mask-repeat: no-repeat;
   mask-position: center;
+  -webkit-mask-position: center;
+  -moz-mask-position: center;
+  text-align: center;
+  margin: 0;
 }
 
 @media (max-width: 600px) {
@@ -798,9 +991,19 @@ h2 {
     background-position: center;
     background-repeat: no-repeat;
     mask-image: url(https://cdn.onlinewebfonts.com/svg/img_41444.svg);
+    -webkit-mask-image: url(https://cdn.onlinewebfonts.com/svg/img_41444.svg);
+    -moz-mask-image: url(https://cdn.onlinewebfonts.com/svg/img_41444.svg);
     mask-size: 100%;
+    -webkit-mask-size: 100%;
+    -moz-mask-size: 100%;
     mask-repeat: no-repeat;
+    -webkit-mask-repeat: no-repeat;
+    -moz-mask-repeat: no-repeat;
     mask-position: center;
+    -webkit-mask-position: center;
+    -moz-mask-position: center;
+    text-align: center;
+    margin: 0 auto;
     margin-bottom: 15px;
   }
 
@@ -819,6 +1022,22 @@ h2 {
   .menu1_course-header {
     margin-bottom: 15px;
     text-align: center;
+  }
+
+  .menu1_course-header h2 {
+    display: inline-block;
+    text-decoration: none;
+  }
+  .menu1_course-header h2:hover::after {
+    transform-origin: 0% 50%;
+    transform: scaleX(1);
+  }
+  .menu1_course-header h2::after {
+    display: block;
+    content: "";
+    border-bottom: solid 2px #000;
+    transform: scaleX(0);
+    transition: transform 250ms ease-in-out;
   }
 
   .menu1_course-content {
@@ -864,7 +1083,9 @@ h2 {
   }
 
   .note-caption {
-    padding-top: 40px;
+    padding-top: 45px;
+    font-family: RJOETRIAL;
+    margin-left: 5px;
   }
 
   .menu1_gradient_note-bottom {
@@ -877,9 +1098,19 @@ h2 {
     background-position: center;
     background-repeat: no-repeat;
     mask-image: url(https://cdn.onlinewebfonts.com/svg/img_41444.svg);
+    -webkit-mask-image: url(https://cdn.onlinewebfonts.com/svg/img_41444.svg);
+    -moz-mask-image: url(https://cdn.onlinewebfonts.com/svg/img_41444.svg);
     mask-size: 100%;
+    -webkit-mask-size: 100%;
+    -moz-mask-size: 100%;
     mask-repeat: no-repeat;
+    -webkit-mask-repeat: no-repeat;
+    -moz-mask-repeat: no-repeat;
     mask-position: center;
+    -webkit-mask-position: center;
+    -moz-mask-position: center;
+    text-align: center;
+    margin: 0;
   }
 }
 @font-face {
@@ -943,21 +1174,46 @@ h2 {
   font-family: Prociono;
 }
 
+.menu2_course-header {
+  margin-bottom: 15px;
+  text-align: center;
+}
+
+.menu2_course-header h2 {
+  display: inline-block;
+  text-decoration: none;
+}
+.menu2_course-header h2:hover::after {
+  transform-origin: 0% 50%;
+  transform: scaleX(1);
+}
+.menu2_course-header h2::after {
+  display: block;
+  content: "";
+  border-bottom: solid 2px #000;
+  transform: scaleX(0);
+  transition: transform 250ms ease-in-out;
+}
+
 .menu2_first-course {
   color: #c67412;
+}
+.menu2_first-course .menu2_course-header h2::after {
+  border-bottom: solid 2px #c67412;
 }
 
 .menu2_main-course {
   color: #a56799;
 }
+.menu2_main-course .menu2_course-header h2::after {
+  border-bottom: solid 2px #a56799;
+}
 
 .menu2_last-course {
   color: #6e4ccc;
 }
-
-.menu2_course-header {
-  margin-bottom: 15px;
-  text-align: center;
+.menu2_last-course .menu2_course-header h2::after {
+  border-bottom: solid 2px #6e4ccc;
 }
 
 .menu2_course-content {
@@ -978,7 +1234,7 @@ h2 {
 
 @media (max-width: 600px) {
   .menu2_container {
-    background-color: #fcdfda;
+    background-color: #fff5fd;
     font-family: "Comic Sans MS", "Franklin Gothic Medium", "Arial Narrow", "Arial", sans-serif;
     height: 100%;
   }
@@ -1018,9 +1274,6 @@ h2 {
     -moz-background-clip: text;
     -webkit-text-fill-color: transparent;
     -moz-text-fill-color: transparent;
-  }
-
-  h1 {
     font-size: 35px;
   }
 
@@ -1048,6 +1301,22 @@ h2 {
   .menu2_course-header {
     margin-bottom: 15px;
     text-align: center;
+  }
+
+  .menu2_course-header h2 {
+    display: inline-block;
+    text-decoration: none;
+  }
+  .menu2_course-header h2:hover::after {
+    transform-origin: 0% 50%;
+    transform: scaleX(1);
+  }
+  .menu2_course-header h2::after {
+    display: block;
+    content: "";
+    border-bottom: solid 2px #000;
+    transform: scaleX(0);
+    transition: transform 250ms ease-in-out;
   }
 
   .menu2_course-content {
@@ -1134,6 +1403,22 @@ h2 {
   text-align: center;
 }
 
+.menu3_course-header h2 {
+  display: inline-block;
+  text-decoration: none;
+}
+.menu3_course-header h2:hover::after {
+  transform-origin: 0% 50%;
+  transform: scaleX(1);
+}
+.menu3_course-header h2::after {
+  display: block;
+  content: "";
+  border-bottom: solid 2px #000;
+  transform: scaleX(0);
+  transition: transform 250ms ease-in-out;
+}
+
 .menu3_course-content {
   margin-bottom: 40px;
 }
@@ -1152,7 +1437,7 @@ h2 {
 
 @media (max-width: 600px) {
   .menu3_container {
-    background-color: #fcdfda;
+    background-color: #f9f9f9;
     font-family: "Comic Sans MS", "Franklin Gothic Medium", "Arial Narrow", "Arial", sans-serif;
     height: 100%;
   }
@@ -1192,10 +1477,7 @@ h2 {
     -moz-background-clip: text;
     -webkit-text-fill-color: transparent;
     -moz-text-fill-color: transparent;
-  }
-
-  h1 {
-    font-size: 60px;
+    font-size: 35px;
   }
 
   h2 {
@@ -1210,6 +1492,22 @@ h2 {
   .menu3_course-header {
     margin-bottom: 25px;
     text-align: center;
+  }
+
+  .menu3_course-header h2 {
+    display: inline-block;
+    text-decoration: none;
+  }
+  .menu3_course-header h2:hover::after {
+    transform-origin: 0% 50%;
+    transform: scaleX(1);
+  }
+  .menu3_course-header h2::after {
+    display: block;
+    content: "";
+    border-bottom: solid 2px #000;
+    transform: scaleX(0);
+    transition: transform 250ms ease-in-out;
   }
 
   .menu3_course-content {
@@ -1296,6 +1594,22 @@ h2 {
   text-align: center;
 }
 
+.menu4_course-header h2 {
+  display: inline-block;
+  text-decoration: none;
+}
+.menu4_course-header h2:hover::after {
+  transform-origin: 0% 50%;
+  transform: scaleX(1);
+}
+.menu4_course-header h2::after {
+  display: block;
+  content: "";
+  border-bottom: solid 2px #000;
+  transform: scaleX(0);
+  transition: transform 250ms ease-in-out;
+}
+
 .menu4_course-content {
   margin-bottom: 40px;
 }
@@ -1314,7 +1628,7 @@ h2 {
 
 @media (max-width: 600px) {
   .menu4_container {
-    background-color: #fcdfda;
+    background-color: #fdfffd;
     font-family: "Comic Sans MS", "Franklin Gothic Medium", "Arial Narrow", "Arial", sans-serif;
     height: 100%;
   }
@@ -1347,17 +1661,14 @@ h2 {
   }
 
   .menu4_top-section h1 {
-    background-image: linear-gradient(45deg, #0431df, #0887fb);
+    background-image: linear-gradient(45deg, #42973c, #bfff7e);
     background-size: 100%;
     background-clip: text;
     -webkit-background-clip: text;
     -moz-background-clip: text;
     -webkit-text-fill-color: transparent;
     -moz-text-fill-color: transparent;
-  }
-
-  h1 {
-    font-size: 60px;
+    font-size: 35px;
   }
 
   h2 {
@@ -1372,6 +1683,22 @@ h2 {
   .menu4_course-header {
     margin-bottom: 25px;
     text-align: center;
+  }
+
+  .menu4_course-header h2 {
+    display: inline-block;
+    text-decoration: none;
+  }
+  .menu4_course-header h2:hover::after {
+    transform-origin: 0% 50%;
+    transform: scaleX(1);
+  }
+  .menu4_course-header h2::after {
+    display: block;
+    content: "";
+    border-bottom: solid 2px #000;
+    transform: scaleX(0);
+    transition: transform 250ms ease-in-out;
   }
 
   .menu4_course-content {
