@@ -801,8 +801,8 @@ footer {
 }
 
 .menu1_label {
-  padding-top: 30px;
-  padding-bottom: 10px;
+  padding-top: 40px;
+  padding-bottom: 15px;
   text-align: center;
   font-family: GothicA1-ExtraBold;
   font-size: 20px;
@@ -1153,24 +1153,45 @@ h2 {
   font-family: Prociono;
   src: url("../fonts/Prociono.ttf");
 }
+@font-face {
+  font-family: GothicA1-ExtraBold;
+  src: url("../fonts/GothicA1-ExtraBold.ttf");
+}
+.menu2_name_container {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.menu2_label {
+  padding-top: 40px;
+  padding-bottom: 15px;
+  text-align: center;
+  font-family: GothicA1-ExtraBold;
+  font-size: 20px;
+}
+
 .menu2_container {
-  background-color: #fff5fd;
   font-family: "Comic Sans MS", "Franklin Gothic Medium", "Arial Narrow", "Arial", sans-serif;
   height: 100%;
 }
 
 .menu2_central-container {
+  background-color: #fff5fd;
   padding-top: 30px;
   display: flex;
   flex-flow: column nowrap;
   overflow-y: auto;
   height: 100%;
-  padding-bottom: 100px;
+  width: 600px;
+  box-shadow: 0px 1px 10px rgba(130, 130, 130, 0.3);
+  margin-bottom: 90px;
 }
 
 .menu2_middle-container {
   margin: 0 auto;
-  width: 600px;
+  padding: 0 15px;
 }
 
 section {
@@ -1265,24 +1286,43 @@ h2 {
 }
 
 @media (max-width: 600px) {
+  .menu2_name_container {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .menu2_label {
+    padding-top: 40px;
+    padding-bottom: 15px;
+    text-align: center;
+    font-family: GothicA1-ExtraBold;
+    font-size: 20px;
+  }
+
   .menu2_container {
-    background-color: #fff5fd;
     font-family: "Comic Sans MS", "Franklin Gothic Medium", "Arial Narrow", "Arial", sans-serif;
     height: 100%;
   }
 
   .menu2_central-container {
+    background-color: #fff5fd;
     padding-top: 30px;
     display: flex;
     flex-flow: column nowrap;
     overflow-y: auto;
     height: 100%;
-    padding-bottom: 100px;
+    width: 80%;
+    box-shadow: 0px 1px 10px rgba(130, 130, 130, 0.3);
+    padding-bottom: 40px;
+    margin-bottom: 90px;
   }
 
   .menu2_middle-container {
     margin: 0 auto;
     width: 100%;
+    padding: 0 15px;
   }
 
   section {
@@ -1377,24 +1417,45 @@ h2 {
   font-family: DancingScript;
   src: url("../fonts/DancingScript.ttf");
 }
+@font-face {
+  font-family: GothicA1-ExtraBold;
+  src: url("../fonts/GothicA1-ExtraBold.ttf");
+}
+.menu3_name_container {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.menu3_label {
+  padding-top: 40px;
+  padding-bottom: 15px;
+  text-align: center;
+  font-family: GothicA1-ExtraBold;
+  font-size: 20px;
+}
+
 .menu3_container {
-  background-color: #f9f9f9;
   font-family: "Comic Sans MS", "Franklin Gothic Medium", "Arial Narrow", "Arial", sans-serif;
   height: 100%;
 }
 
 .menu3_central-container {
+  background-color: #f9f9f9;
   padding-top: 30px;
   display: flex;
   flex-flow: column nowrap;
   overflow-y: auto;
   height: 100%;
-  padding-bottom: 100px;
+  width: 600px;
+  box-shadow: 0px 1px 10px rgba(130, 130, 130, 0.3);
+  margin-bottom: 90px;
 }
 
 .menu3_middle-container {
   margin: 0 auto;
-  width: 600px;
+  padding: 0 15px;
 }
 
 section {
@@ -1468,24 +1529,43 @@ h2 {
 }
 
 @media (max-width: 600px) {
+  .menu3_name_container {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .menu3_label {
+    padding-top: 40px;
+    padding-bottom: 15px;
+    text-align: center;
+    font-family: GothicA1-ExtraBold;
+    font-size: 20px;
+  }
+
   .menu3_container {
-    background-color: #f9f9f9;
     font-family: "Comic Sans MS", "Franklin Gothic Medium", "Arial Narrow", "Arial", sans-serif;
     height: 100%;
   }
 
   .menu3_central-container {
+    background-color: #f9f9f9;
     padding-top: 30px;
     display: flex;
     flex-flow: column nowrap;
     overflow-y: auto;
     height: 100%;
-    padding-bottom: 100px;
+    width: 80%;
+    box-shadow: 0px 1px 10px rgba(130, 130, 130, 0.3);
+    padding-bottom: 40px;
+    margin-bottom: 90px;
   }
 
   .menu3_middle-container {
     margin: 0 auto;
     width: 100%;
+    padding: 0 15px;
   }
 
   section {
@@ -1568,24 +1648,45 @@ h2 {
   font-family: KaushanScript;
   src: url("../fonts/KaushanScript.ttf");
 }
+@font-face {
+  font-family: GothicA1-ExtraBold;
+  src: url("../fonts/GothicA1-ExtraBold.ttf");
+}
+.menu4_name_container {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.menu4_label {
+  padding-top: 40px;
+  padding-bottom: 15px;
+  text-align: center;
+  font-family: GothicA1-ExtraBold;
+  font-size: 20px;
+}
+
 .menu4_container {
-  background-color: #fdfffd;
   font-family: "Comic Sans MS", "Franklin Gothic Medium", "Arial Narrow", "Arial", sans-serif;
   height: 100%;
 }
 
 .menu4_central-container {
+  background-color: #fdfffd;
   padding-top: 30px;
   display: flex;
   flex-flow: column nowrap;
   overflow-y: auto;
   height: 100%;
-  padding-bottom: 100px;
+  width: 600px;
+  box-shadow: 0px 1px 10px rgba(130, 130, 130, 0.3);
+  margin-bottom: 90px;
 }
 
 .menu4_middle-container {
   margin: 0 auto;
-  width: 600px;
+  padding: 0 15px;
 }
 
 section {
@@ -1659,24 +1760,43 @@ h2 {
 }
 
 @media (max-width: 600px) {
+  .menu4_name_container {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .menu4_label {
+    padding-top: 40px;
+    padding-bottom: 15px;
+    text-align: center;
+    font-family: GothicA1-ExtraBold;
+    font-size: 20px;
+  }
+
   .menu4_container {
-    background-color: #fdfffd;
     font-family: "Comic Sans MS", "Franklin Gothic Medium", "Arial Narrow", "Arial", sans-serif;
     height: 100%;
   }
 
   .menu4_central-container {
+    background-color: #fdfffd;
     padding-top: 30px;
     display: flex;
     flex-flow: column nowrap;
     overflow-y: auto;
     height: 100%;
-    padding-bottom: 100px;
+    width: 80%;
+    box-shadow: 0px 1px 10px rgba(130, 130, 130, 0.3);
+    padding-bottom: 40px;
+    margin-bottom: 90px;
   }
 
   .menu4_middle-container {
     margin: 0 auto;
     width: 100%;
+    padding: 0 15px;
   }
 
   section {
