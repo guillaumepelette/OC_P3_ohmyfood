@@ -882,6 +882,17 @@ h2 {
 .menu1_course-header {
   margin-bottom: 15px;
   text-align: center;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+}
+
+.menu1_div-paint-brush {
+  padding-top: 5px;
+}
+
+.menu1_paint-brush {
+  width: 160px;
 }
 
 .menu1_course-header h2 {
@@ -978,7 +989,7 @@ h2 {
 
   .menu1_name_container {
     display: flex;
-    flex-flow: row nowrap;
+    flex-flow: column nowrap;
     justify-content: center;
     align-items: center;
   }
@@ -1054,6 +1065,17 @@ h2 {
   .menu1_course-header {
     margin-bottom: 15px;
     text-align: center;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+  }
+
+  .menu1_div-paint-brush {
+    padding-top: 5px;
+  }
+
+  .menu1_paint-brush {
+    width: 100px;
   }
 
   .menu1_course-header h2 {
