@@ -107,6 +107,25 @@ h2 {
 
 .menu1_div-paint-brush {
     padding-top: 5px;
+    width: 160px;
+
+    background-color: #000;
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    mask-image: url(icons/paint_brush.svg);
+    -webkit-mask-image: url(icons/paint_brush.svg);
+    -moz-mask-image: url(icons/paint_brush.svg);
+    mask-size: 100%;
+    -webkit-mask-size: 100%;
+    -moz-mask-size: 100%;
+    mask-repeat: no-repeat;
+    -webkit-mask-repeat: no-repeat;
+    -moz-mask-repeat: no-repeat;
+    mask-position: center;
+    -webkit-mask-position: center;
+    -moz-mask-position: center;
 }
 
 .menu1_paint-brush {
