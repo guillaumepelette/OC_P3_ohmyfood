@@ -128,7 +128,6 @@ header {
 }
 
 .top_layer h1 {
-  letter-spacing:-1;
   font-kerning:none;
   font-size:1.5em;
 }
@@ -145,7 +144,6 @@ header {
   align-items: stretch;
   align-content: stretch;
   top: 60px;
-  overflow-y: auto;
 }
 
 .main_container {
@@ -513,8 +511,8 @@ header {
   vertical-align:middle;
 }
 
+
 .top_layer h1 {
-  letter-spacing:-1;
   font-kerning:none;
   font-size:1.5em;
   font-family: SansSerifExbFLF;
@@ -531,7 +529,6 @@ header {
   align-items: stretch;
   align-content: stretch;
   top: 60px;
-  overflow-y: auto;
 }
 
 .main_container {
